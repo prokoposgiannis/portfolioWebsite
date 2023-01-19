@@ -47,7 +47,7 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="nonreferrer"
-          href="https://www.linkedin.com/in/john-prokopos-348427108/"
+          href="https://github.com/prokoposgiannis"
         >
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </a>
@@ -56,7 +56,7 @@ const Sidebar = () => (
         <a
           target="_blank"
           rel="nonreferrer"
-          href="https://github.com/prokoposgiannis"
+          href="https://www.facebook.com/prokoposgiannis/"
         >
           <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
         </a>
