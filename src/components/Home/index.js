@@ -8,8 +8,8 @@ const Home = () => {
       <div className="text-zone">
         <h1>
           Hi, <br /> I'm
-          <img src={LogoTitle} alt="developoer" />
-          lobodan
+          <img src={LogoTitle} alt="developer" />
+          uper Prokopos
           <br />
           web developer
         </h1>
