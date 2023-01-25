@@ -18,14 +18,19 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("gmail", "template_qy3ltji", form.current, "service_yon643p")
+      .sendForm(
+        "service_n3uwrju",
+        "template_qy3ltji",
+        form.current,
+        "QwOxNNGrK36uMHf_d"
+      )
       .then(
         () => {
           alert("Message succesfully sent.");
           window.location.reload(false);
         },
-        () => {
-          alert("Message failed to be sent.");
+        (e) => {
+          alert(`Message failed to be sent.${JSON.stringify(e)}`);
         }
       );
   };
@@ -68,7 +73,7 @@ const Contact = () => {
                   <textarea name="message" placeholder="Message" required />
                 </li>
                 <li>
-                  <input type="sumbit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
             </form>
