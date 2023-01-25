@@ -2,10 +2,11 @@ import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect, useRef } from "react";
 import "./index.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [letterClass, setLeeterClass] = useState("text-animate");
-  const ref = useRef;
+  const form = useRef();
 
   useEffect(() => {
     setTimeout(() => {
@@ -16,7 +17,17 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs;
+    emailjs
+      .sendForm("gmail", "template_qy3ltji", form.current, "service_yon643p")
+      .then(
+        () => {
+          alert("Message succesfully sent.");
+          window.location.reload(false);
+        },
+        () => {
+          alert("Message failed to be sent.");
+        }
+      );
   };
 
   return (
@@ -32,7 +43,7 @@ const Contact = () => {
           </h1>
           <p>Open to cooperation ideas</p>
           <div className="contact-form">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
