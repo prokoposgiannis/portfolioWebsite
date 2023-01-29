@@ -1,0 +1,14 @@
+[debug] [2023-01-29T21:35:41.832Z] ----------------------------------------------------------------------
+[debug] [2023-01-29T21:35:41.836Z] Command:       /usr/local/bin/node /usr/local/bin/firebase hosting:channel:deploy preview_name
+[debug] [2023-01-29T21:35:41.837Z] CLI Version:   11.21.0
+[debug] [2023-01-29T21:35:41.837Z] Platform:      darwin
+[debug] [2023-01-29T21:35:41.838Z] Node Version:  v19.5.0
+[debug] [2023-01-29T21:35:41.838Z] Time:          Sun Jan 29 2023 23:35:41 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-01-29T21:35:41.838Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-29T21:35:41.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-29T21:35:41.942Z] > authorizing via signed-in user (giannisprokopos@gmail.com)
+[debug] [2023-01-29T21:35:41.942Z] [iam] checking project portfolio-f28c7 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-29T21:35:41.944Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-f28c7:testIamPermissions [none]
+[debug] [2023-01-29T21:35:41.944Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-f28c7:testIamPermissions x-goog-quota-user=projects/portfolio-f28c7
+[debug] [2023-01-29T21:35:41.944Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-f28c7:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
