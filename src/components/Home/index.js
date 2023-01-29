@@ -1,38 +1,23 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 // import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters";
-import LogoTitle from "../../assets/images/logo-s.png";
-import Logo from "./Logo";
-import "./index.scss";
-import Loader from "react-loaders";
+import AnimatedLetters from '../AnimatedLetters'
+import LogoTitle from '../../assets/images/logo-s.png'
+import Logo from './Logo'
+import './index.scss'
+import Loader from 'react-loaders'
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState("text-animate");
+  const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ["l", "o", "b", "o", "d", "a", "n"];
-  const jobArray = [
-    "w",
-    "e",
-    "b",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-    ".",
-  ];
+  const nameArray = ', ,J,o,h,n, ,P,r,o,k,o,p,o,s'.split(',')
+  const jobArray = 'W,e,b, ,d,e,v,e,l,o,p,e,r,.'.split(',')
 
   useEffect(() => {
     setTimeout(() => {
-      return setLetterClass("text-animate-hover");
-    }, 4000);
-  }, []);
+      return setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
 
   return (
     <>
@@ -43,11 +28,7 @@ const Home = () => {
             <span className={`${letterClass} _12`}>i,</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            />
+            <span className={`${letterClass} _14`}>'m </span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -65,11 +46,10 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
       </div>
       <Loader type="pacman" />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
