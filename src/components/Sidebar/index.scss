@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 10%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -58,7 +58,7 @@
       }
 
       &:after {
-        content: "";
+        content: '';
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -72,20 +72,20 @@
 
       &:first-child {
         &:after {
-          content: "HOME";
+          content: 'HOME';
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: "ABOUT";
+        content: 'ABOUT';
       }
     }
 
     a.contact-link {
       &:after {
-        content: "CONTACT";
+        content: 'CONTACT';
       }
     }
 
